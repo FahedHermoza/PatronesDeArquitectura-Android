@@ -23,8 +23,21 @@ El patrón MVC en un principio se aplico a Android, con el uso los desarrollador
 
 [Aquí](https://medium.com/@fahedhermoza/por-qu%C3%A9-no-funciona-mvc-en-android-d0b747a823c0) puedes encontrar una post en detalle que responde esta pregunta.
 
-### App con MVC
-[Aquí]() puedes encontrar un app construida con el patron de arquitectura MVC
+# MVP
+Este patrón de arquitectura se compone de las siguientes partes:
+
+- Modelo: Responsable de recuperar datos, almacenarlos y cambiarlos.
+
+- Vista: Responsable de mostrar la UI, este rol se designa a una Activity o Fragment. La vista ocultara y mostrara  vistas, manejara la navegación a otras actividades a través de Intents y escuchara las interacciones del sistema operativo y la entrada del usuario.
+
+- Presentador: El presentador es la clase que habla tanto con el Modelo como con la Vista. Cualquier código que no maneje directamente la UI u otra lógica especifica del marco de Android, debe moverse de la Vista a la clase Presentador. 
+
+Lógica de Presentación: Cualquier mapeo o formateo adicional de los datos es responsabilidad del Presentador.
+
+MVP hace uso de interfaces para cumplir sus objetivos.
+
+# Diapositivas
+- Slide : [URL](https://docs.google.com/presentation/d/12WxYEk32VPTVF8hCRSp0HJJJQKxwIX1Dwkk7ChVrqOc/edit?usp=sharing)
 
 # Mas información
 Resumen del libro [Advanced Android App Architecture](https://store.raywenderlich.com/products/advanced-android-app-architecture).
