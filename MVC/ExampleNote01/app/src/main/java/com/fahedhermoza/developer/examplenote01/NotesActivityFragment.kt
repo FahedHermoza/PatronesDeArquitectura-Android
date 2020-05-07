@@ -35,19 +35,29 @@ class NotesActivityFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        activity?.title = getString(R.string.title_activity_notes)
-
+        changeTitle()
+        actionFabPlusNotes()
         dataSource = LocalDataSource(activity!!.application)
+    }
 
-        fab.setOnClickListener {
+    private fun changeTitle(){
+        activity?.title = getString(R.string.title_activity_notes)
+    }
+
+    private fun actionFabPlusNotes(){
+        fabPlusNotes.setOnClickListener {
             navigationToDetailNotes()
         }
+    }
+
+    private fun navigationToDetailNotes(){
+        val intent = Intent(context, DetailNotesActivity::class.java)
+        startActivity(intent)
     }
 
     override fun onStart() {
         super.onStart()
         getMyNotesList()
-
     }
 
     override fun onStop() {
@@ -87,19 +97,13 @@ class NotesActivityFragment : Fragment() {
 
     fun displayNotes(noteList: List<Note>?) {
         if (noteList == null || noteList.isEmpty()) {
-            Log.d("TAG", "No notes to display")
-            recyclerView.visibility = View.INVISIBLE
+            recyclerViewNotes.visibility = View.INVISIBLE
         } else {
             adapter = NoteAdapter(noteList.toMutableList())
-            recyclerView.adapter = adapter
-            recyclerView.layoutManager = LinearLayoutManager(activity)
-            recyclerView.visibility = View.VISIBLE
+            recyclerViewNotes.adapter = adapter
+            recyclerViewNotes.layoutManager = LinearLayoutManager(activity)
+            recyclerViewNotes.visibility = View.VISIBLE
         }
-    }
-
-    private fun navigationToDetailNotes(){
-        val intent = Intent(context, DetailNotesActivity::class.java)
-        startActivity(intent)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -109,7 +113,7 @@ class NotesActivityFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.action_all_delete){
             dataSource.deleteAll()
-            Toast.makeText(activity, "Notas eliminadas", Toast.LENGTH_SHORT).show()
+            showToast("Notas eliminadas")
         }else if (item.itemId == R.id.deleteMenuItem) {
             onDeleteTapped(adapter.selectedNotes)
         }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotesActivityFragment"
+    tools:context=".activities.notes.NotesActivityFragment"
     tools:showIn="@layout/activity_notes">
 
     <androidx.recyclerview.widget.RecyclerView

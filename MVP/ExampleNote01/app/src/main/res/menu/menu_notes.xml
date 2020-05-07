@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fahedhermoza.developer.examplenote01.activities.notes.NotesActivity">
+    <item
+        android:id="@+id/deleteMenuItem"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:title="@string/action_delete"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_all_delete"
+        android:orderInCategory="100"
+        android:title="@string/action_delete_detail_notes"
+        app:showAsAction="never" />
+</menu>
