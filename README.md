@@ -21,7 +21,7 @@ Este patrón de arquitectura separa los componentes de un sistema de software en
 ### ¿Por qué no funciona MVC?
 El patrón MVC en un principio se aplico a Android, con el uso los desarrolladores  se dieron cuenta de que esto no funcionaba principalmente porque la Activity sirve como Controlador y Vista, esto conlleva problemas importantes para la separación de responsabilidades y pruebas de unidad. 
 
-[Aquí](https://medium.com/@fahedhermoza/por-qu%C3%A9-no-funciona-mvc-en-android-d0b747a823c0) puedes encontrar una post en detalle que responde esta pregunta.
+[Aquí](https://medium.com/@fahedhermoza/por-qu%C3%A9-no-funciona-mvc-en-android-d0b747a823c0) puedes encontrar un post en detalle que responde esta pregunta.
 
 # MVP
 Este patrón de arquitectura se compone de las siguientes partes:
@@ -36,6 +36,11 @@ Lógica de Presentación: Cualquier mapeo o formateo adicional de los datos es r
 
 MVP hace uso de interfaces para cumplir sus objetivos.
 
+[Aquí](https://medium.com/@fahedhermoza/android-y-el-patr%C3%B3n-mvp-4b9ddf377185) puedes encontrar un post con mayor detalle sobre el patrón MVP.
+# Implementación
+El código de ejemplo se basa en una copia pirata de Evernote en el cual puedes organizar tus anotaciones. El diseño es el mismo para todas las apps solo cambia la implementación.
+- MVC: [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVC/ExampleNote01)
+- MVP: [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVP/ExampleNote01)
 # Diapositivas
 - Slide : [URL](https://docs.google.com/presentation/d/12WxYEk32VPTVF8hCRSp0HJJJQKxwIX1Dwkk7ChVrqOc/edit?usp=sharing)
 
