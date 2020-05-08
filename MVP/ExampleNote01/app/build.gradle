@@ -37,6 +37,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    //Mockito
+    testImplementation 'org.mockito:mockito-core:2.2.5'
+    testImplementation('com.nhaarman:mockito-kotlin-kt1.1:1.5.0', {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
+    })
     // Room components
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"

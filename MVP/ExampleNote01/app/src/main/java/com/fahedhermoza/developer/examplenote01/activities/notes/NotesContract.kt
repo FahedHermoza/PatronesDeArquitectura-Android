@@ -15,6 +15,7 @@ class NotesContract {
 
     interface ViewInterface {
         fun displayNotes(noteList: List<Note>?)
+        fun displayWithoutNotes()
         fun showToast(string: String)
         fun navigationToDetailNotes()
     }

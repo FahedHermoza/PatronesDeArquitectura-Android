@@ -62,15 +62,14 @@ class NotesActivityFragment : Fragment(), NotesContract.ViewInterface {
     }
 
     override fun displayNotes(noteList: List<Note>?) {
-        if (noteList == null || noteList.isEmpty()) {
-            recyclerViewNotes.visibility = View.INVISIBLE
-        } else {
-            adapter =
-                NoteAdapter(noteList.toMutableList())
-            recyclerViewNotes.adapter = adapter
-            recyclerViewNotes.layoutManager = LinearLayoutManager(activity)
-            recyclerViewNotes.visibility = View.VISIBLE
-        }
+        adapter = NoteAdapter(noteList!!.toMutableList())
+        recyclerViewNotes.adapter = adapter
+        recyclerViewNotes.layoutManager = LinearLayoutManager(activity)
+        recyclerViewNotes.visibility = View.VISIBLE
+    }
+
+    override fun displayWithoutNotes() {
+        recyclerViewNotes.visibility = View.INVISIBLE
     }
 
     override fun navigationToDetailNotes(){

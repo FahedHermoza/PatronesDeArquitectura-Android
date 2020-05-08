@@ -23,7 +23,11 @@ class NotesPresenter(private var viewInterface: NotesContract.ViewInterface,
         get() = object : DisposableObserver<List<Note>>() {
 
             override fun onNext(noteList: List<Note>) {
-                viewInterface.displayNotes(noteList)
+                if (noteList.isEmpty()) {
+                    viewInterface.displayWithoutNotes()
+                } else {
+                    viewInterface.displayNotes(noteList)
+                }
             }
 
             override fun onError(@NonNull e: Throwable) {
@@ -32,7 +36,7 @@ class NotesPresenter(private var viewInterface: NotesContract.ViewInterface,
             }
 
             override fun onComplete() {
-                Log.d("TAG", "Completed")
+                //Log.d("TAG", "Completed")
             }
         }
 

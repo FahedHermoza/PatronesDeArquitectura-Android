@@ -17,25 +17,25 @@ open class LocalDataSource (application: Application) {
     }
 
 
-    fun insert(note: Note) {
+    open fun insert(note: Note) {
         thread {
             noteDao.insert(note)
         }
     }
 
-    fun delete(note: Note) {
+    open fun delete(note: Note) {
         thread {
             noteDao.delete(note.title)
         }
     }
 
-    fun deleteAll() {
+    open fun deleteAll() {
         thread {
             noteDao.deleteAll()
         }
     }
 
-    fun update(note: Note) {
+    open fun update(note: Note) {
         thread {
             noteDao.update(note)
         }
