@@ -1,7 +1,7 @@
 # Patrones de Arquitectura en Android
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/for-sharks.svg)](https://forthebadge.com)
 
-Existen para ayudarlo a diseñar su app, de tal manera que permita mantener la app a medida crece. 
+Existen para ayudarlo a diseñar su app, de tal manera que permita mantener la app a medida crece. En palabras sencillas, un patrón de arquitectura es la forma de describir como divides tu código.
 
 Su objetivo se centra en 2 conceptos:
 - Separación de Interfaces: Se relaciona con la separación de componentes por responsabilidad.
@@ -34,13 +34,37 @@ Este patrón de arquitectura se compone de las siguientes partes:
 
 Lógica de Presentación: Cualquier mapeo o formateo adicional de los datos es responsabilidad del Presentador.
 
-MVP hace uso de interfaces para cumplir sus objetivos.
+MVP hace uso de interfaces para cumplir el objetivo de evitar referenciar a una clase de Android cuando escribe pruebas unitarias.
 
 [Aquí](https://medium.com/@fahedhermoza/android-y-el-patr%C3%B3n-mvp-4b9ddf377185) puedes encontrar un post con mayor detalle sobre el patrón MVP.
+# MVVM
+Este patrón de arquitectura basado en flujos observables se compone de las siguientes partes:
+
+- Modelo(DataModel): Recupera información de su fuente de datos y lo expone a los ViewModels.
+
+- Vista: Muestra la UI e informa a las otras capas sobre acciones del usuario.
+
+- ViewModel: Recupera información necesaria del Modelo, aplica las operaciones necesarias y expone los datos relevantes a través de eventos que las Vistas pueden observar.
+
+El ViewModel no contiene referencia a la Vista, solo proporciona información y no le interesa quien lo consuma.
+
+El problema de estados de la app lo soluciona de manera optima con los Componentes de Arquitectura de Android:
+
+- ViewModel: Diseñada para administrar y almacenar información de manera consciente del ciclo de vida.
+
+- LiveData: Permite que cualquier Vista observe cualquier cambio en los datos.
+
+Generalmente se comunica la Vista y el ViewModel con observables(RxJava, LiveData o DataBinding)
+
+[Aquí]() puedes encontrar un post con mayor detalle sobre el patrón MVVM.
 # Implementación
 El código de ejemplo se basa en una copia pirata de Evernote en el cual puedes organizar tus anotaciones. El diseño es el mismo para todas las apps solo cambia la implementación.
-- MVC: [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVC/ExampleNote01)
-- MVP: [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVP/ExampleNote01)
+- MVC + Room + RxJava 
+[Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVC/ExampleNote01)
+- MVP + Room + RxJava + Mockito 
+[Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVP/ExampleNote01)
+- MVVM + Lifecycle + Room + RxJava + Mockito (in implementation)  
+[Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVP/ExampleNote01)
 # Diapositivas
 - Slide : [URL](https://docs.google.com/presentation/d/12WxYEk32VPTVF8hCRSp0HJJJQKxwIX1Dwkk7ChVrqOc/edit?usp=sharing)
 
