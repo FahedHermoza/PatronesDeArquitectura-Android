@@ -59,12 +59,12 @@ Generalmente se comunica la Vista y el ViewModel con observables(RxJava, LiveDat
 [Aquí]() puedes encontrar un post con mayor detalle sobre el patrón MVVM.
 # Implementación
 El código de ejemplo se basa en una copia pirata de Evernote en el cual puedes organizar tus anotaciones. El diseño es el mismo para todas las apps solo cambia la implementación.
-- MVC + Room + RxJava 
-[Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVC/ExampleNote01)
+- MVC + Room + RxJava
+- [x] [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVC/ExampleNote01)
 - MVP + Room + RxJava + Mockito 
-[Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVP/ExampleNote01)
+- [x] [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVP/ExampleNote01)
 - MVVM + Lifecycle + Room + RxJava + Mockito (in implementation)  
-[Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVP/ExampleNote01)
+- [x] [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVP/ExampleNote01)
 # Diapositivas
 - Slide : [URL](https://docs.google.com/presentation/d/12WxYEk32VPTVF8hCRSp0HJJJQKxwIX1Dwkk7ChVrqOc/edit?usp=sharing)
 
