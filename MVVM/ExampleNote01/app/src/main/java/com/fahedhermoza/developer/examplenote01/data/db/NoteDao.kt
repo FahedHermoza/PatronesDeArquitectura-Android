@@ -2,7 +2,6 @@ package com.fahedhermoza.developer.examplenote01.Models
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import io.reactivex.Observable
 
 @Dao
 interface NoteDao {
