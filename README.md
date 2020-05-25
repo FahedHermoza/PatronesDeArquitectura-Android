@@ -68,5 +68,5 @@ El código de ejemplo se basa en una copia pirata de Evernote en el cual puedes 
 # Diapositivas
 - Slide : [URL](https://docs.google.com/presentation/d/12WxYEk32VPTVF8hCRSp0HJJJQKxwIX1Dwkk7ChVrqOc/edit?usp=sharing)
 
-## Desarrollador
+# Desarrollador
 **Si te sirvió** puedes darme manito arriba en mi [blog](https://www.facebook.com/fahedhermoza/).
