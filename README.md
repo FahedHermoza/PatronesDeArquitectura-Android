@@ -68,8 +68,5 @@ El código de ejemplo se basa en una copia pirata de Evernote en el cual puedes 
 # Diapositivas
 - Slide : [URL](https://docs.google.com/presentation/d/12WxYEk32VPTVF8hCRSp0HJJJQKxwIX1Dwkk7ChVrqOc/edit?usp=sharing)
 
-# Mas información
-Resumen del libro [Advanced Android App Architecture](https://store.raywenderlich.com/products/advanced-android-app-architecture).
-
 ## Desarrollador
 **Si te sirvió** puedes darme manito arriba en mi [blog](https://www.facebook.com/fahedhermoza/).
