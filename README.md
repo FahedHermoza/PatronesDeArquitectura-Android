@@ -63,7 +63,7 @@ El código de ejemplo se basa en una copia pirata de Evernote en el cual puedes 
 - [x] [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVC/ExampleNote01)
 - MVP + Room + RxJava + Mockito 
 - [x] [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVP/ExampleNote01)
-- MVVM + Lifecycle + Room + RxJava + Mockito (in implementation)  
+- MVVM + Room + Lifecycle + Mockito (in implementation)  
 - [x] [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVP/ExampleNote01)
 # Diapositivas
 - Slide : [URL](https://docs.google.com/presentation/d/12WxYEk32VPTVF8hCRSp0HJJJQKxwIX1Dwkk7ChVrqOc/edit?usp=sharing)
