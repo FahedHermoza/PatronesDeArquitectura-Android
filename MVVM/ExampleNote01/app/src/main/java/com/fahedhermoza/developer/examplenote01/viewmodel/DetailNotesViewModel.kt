@@ -8,10 +8,16 @@ import com.fahedhermoza.developer.examplenote01.data.NoteRepository
 class DetailNotesViewModel(private val repository: NoteRepository = NoteRepositoryImpl()): ViewModel() {
 
     fun insertNote(note: Note) {
-        repository.insert(note)
+        if(canSaveNote(note))
+            repository.insert(note)
     }
 
     fun updateNote(note: Note) {
-        repository.update(note)
+        if(canSaveNote(note))
+            repository.update(note)
+    }
+
+    fun canSaveNote(note: Note): Boolean {
+        return note.title.isNotEmpty() && note.description.isNotEmpty()
     }
 }
