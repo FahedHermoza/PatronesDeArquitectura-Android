@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_pokemon">Pokedex Shyni</string>
+
+    <string name="empty_list_main_pokemon">No se encontró museos</string>
+    <string name="an_error_occurred_main_pokemon">Ocurrió un error</string>
+    <string name="load_list_main_pokemon">Obteniendo nuevos items...</string>
+</resources>
