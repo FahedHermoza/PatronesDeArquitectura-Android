@@ -71,6 +71,11 @@ El código de ejemplo se basa en una copia pirata de Evernote en el cual puedes 
 - [x] [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVVM/Koin/ExampleNote01)
 - MVVM + Room + Lifecycle + Mockito + Koin +  KoinTest  
 - [x] [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/MVVM/KoinTest/ExampleNote01)
+
+Extras: 
+- Pokedex: MVVM + Retrofit + Lifecycle + Mockito + Koin + Piccaso  
+- [x] [Código](https://github.com/FahedHermoza/PatronesDeArquitectura-Android/tree/master/EXTRA/MainPokemon)
+
 # Diapositivas
 - Slide : [URL](https://docs.google.com/presentation/d/12WxYEk32VPTVF8hCRSp0HJJJQKxwIX1Dwkk7ChVrqOc/edit?usp=sharing)
 
