@@ -51,4 +51,8 @@ class MainViewModel(private val repository: PokemonRepository = PokemonRepositor
         },OFFSET_PAGINATION, LIMIT_PAGINATION)
     }
 
+    fun stop(){
+        repository.cancel()
+    }
+
 }

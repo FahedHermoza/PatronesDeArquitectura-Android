@@ -30,9 +30,6 @@
 
 package com.fahed.developer.mainpokemon.respository
 
-import androidx.lifecycle.LiveData
-import com.fahed.developer.mainpokemon.data.model.Pokemon
-import com.fahed.developer.mainpokemon.data.model.PokemonResponse
 import com.fahed.developer.mainpokemon.data.net.OperationCallback
 
 interface PokemonRepository {

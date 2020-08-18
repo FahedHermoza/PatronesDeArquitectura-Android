@@ -118,4 +118,9 @@ class MainPokemonActivityFragment : Fragment() {
         super.onResume()
         viewModel.loadPokemons()
     }
+
+    override fun onStop() {
+        viewModel.stop()
+        super.onStop()
+    }
 }
