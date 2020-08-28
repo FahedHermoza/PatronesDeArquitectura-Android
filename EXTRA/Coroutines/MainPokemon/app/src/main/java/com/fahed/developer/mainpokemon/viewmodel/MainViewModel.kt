@@ -37,9 +37,7 @@ class MainViewModel(private val repository: PokemonRepository = PokemonRepositor
         _isViewLoading.postValue(true)
 
         viewModelScope.launch {
-            var  result: OperationResult<Pokemon> = withContext(Dispatchers.IO){
-                repository.retrievePokemons(OFFSET_PAGINATION, LIMIT_PAGINATION)
-            }
+            var  result: OperationResult<Pokemon> = repository.retrievePokemons(OFFSET_PAGINATION, LIMIT_PAGINATION)
             _isViewLoading.postValue(false)
             when(result){
                 is OperationResult.Success ->{

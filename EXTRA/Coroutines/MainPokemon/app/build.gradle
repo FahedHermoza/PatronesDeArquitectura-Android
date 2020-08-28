@@ -58,6 +58,7 @@ dependencies {
     //Picasso
     implementation "com.squareup.picasso:picasso:$rootProject.picasso_version"
     //Coroutine
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutine_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutine_version"
     //Android KTX
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycle_ktx_version"
